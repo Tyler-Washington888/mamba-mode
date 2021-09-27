@@ -14,37 +14,34 @@ const config = {
 
 console.log(URL)
 
-function Quotes() {
+function Footer() {
   const [quotes, setQuotes] = useState([])
-  // const [ singleQuote, setSingleQuote] = useState(0)
+  const [singleQuote, setSingleQuote] = useState('')
 
 
   useEffect(() => {
     const fetchQuotes = async () => {
-      const res = await axios.get(URL, config);
+      const res = await axios.get(URL, config)
       setQuotes(res.data.records)
+      const quoteLength = res.data.records.length
+
+
+
+      const random = Math.floor(Math.random() * quoteLength)
+      setSingleQuote(res.data.records[random].fields.Quotes)
+
+
     };
 
     fetchQuotes()
   }, [])
-  
 
-  //Takes us to random index in quotes array 
-  //  const randomQuote =  Math.floor(Math.random() * uotes.length)
-  // setSingleQuote(randomQuote)
-return (
-    <div>
-      <div>
-        <ul>
-          {quotes.map((quote) => {
-            return <li> {quote.fields.Quotes} </li>
-      })}
-        </ul>
-      </div>
-
+  return (
+    <div className="footer">
+      <h1 className="footer-text">{singleQuote}</h1>
     </div>
   )
 }
 
-export default Quotes;
+export default Footer;
 
