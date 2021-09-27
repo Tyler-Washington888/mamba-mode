@@ -26,16 +26,15 @@ function Footer() {
       const quoteLength = res.data.records.length
 
 
-
       const random = Math.floor(Math.random() * quoteLength)
       setSingleQuote(res.data.records[random].fields.Quotes)
-
 
     };
 
     fetchQuotes()
   }, [])
 
+  console.log(quotes)
   return (
     <div className="footer">
       <h1 className="footer-text">{singleQuote}</h1>

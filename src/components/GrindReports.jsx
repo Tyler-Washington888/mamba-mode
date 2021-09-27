@@ -39,7 +39,7 @@ function GrindReports() {
         return (
           <div key={report.id} className="grind-report-div">
             <div className="grind-report-header-div">
-              <h1 className="shots-made-text" className="grind-report-header-text">Shots Made</h1>
+              <h1 className="shots-made-text grind-report-header-text">Shots Made</h1>
             </div>
             <div className="grind-report-input-div">
               <h1 className="grind-report-input-text">{report.fields.total_Shots_Made}</h1>

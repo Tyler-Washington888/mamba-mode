@@ -28,8 +28,8 @@ export default function EditGrindReport() {
       console.log()
 
     };
-
     fetchReport()
+    // eslint-disable-next-line 
   }, [])
 
   return (

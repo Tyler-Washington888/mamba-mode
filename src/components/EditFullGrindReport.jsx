@@ -49,8 +49,8 @@ function EditFullGrindReport() {
       setShotPerformance(fields.shot_Performance)
       setComments(fields.comments)
     };
-
     fetchReport();
+    // eslint-disable-next-line
   }, []);
 
   const handleSubmit = async (e) => {
@@ -73,7 +73,10 @@ function EditFullGrindReport() {
 
     const res = await axios.put(`${URL}/${id}`, { fields }, config);
     history.push("/");
+    console.log(res);
   };
+
+
 
   return (
     <div className="new-grind-report-div">
