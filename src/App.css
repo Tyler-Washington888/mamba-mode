@@ -87,7 +87,7 @@ body {
 .grind-report-input-div {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .grind-report-input-text {
   font-size: 25px;
@@ -354,7 +354,7 @@ body {
   .grind-report-input-div {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
   }
   .grind-report-input-text {
     font-size: 50px;
@@ -460,7 +460,7 @@ body {
     color: black;
     text-align: center;
     margin-left: 30px;
-    font-size: 20px;
+    font-size: 30px;
   }
   .full-grind-report-title {
     color: #adff2f;
