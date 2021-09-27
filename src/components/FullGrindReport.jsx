@@ -60,8 +60,8 @@ export default function EditGrindReport() {
         <h1 className="full-grind-report-input">{report.fields?.shot_Performance}</h1>
       </div>
       <div className="full-grind-report-buttons-div">
-        <button className="full-grind-report-buttons"><Link className="full-grind-report-link" to="/">Delete</Link></button>
-        <button className="full-grind-report-buttons"><Link className="full-grind-report-link" to={`/EditFullGrindReport/${id}/edit`}>Edit</Link></button>
+        <Link className="full-grind-report-link" to="/"><button className="full-grind-report-buttons">Delete</button></Link>
+        <Link className="full-grind-report-link" to={`/EditFullGrindReport/${id}/edit`}><button className="full-grind-report-buttons">Edit</button></Link>
       </div>
 
     </div>

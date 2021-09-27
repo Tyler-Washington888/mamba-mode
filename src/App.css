@@ -225,7 +225,7 @@ body {
   background-color: #753BC3;
   border: none;
   border-radius: 4px;
-  color: white;
+  color: #adff2f;
 } 
 
 .full-grind-report-link {
@@ -448,7 +448,7 @@ body {
     background-color: #753BC3;
     border: none;
     border-radius: 4px;
-    color: white;
+    color: #adff2f;
   } 
   .full-grind-report-headers {
     color: white;
