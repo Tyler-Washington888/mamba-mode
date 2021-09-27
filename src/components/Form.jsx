@@ -5,7 +5,7 @@ function Form(props) {
     <div>
       <form className="new-grind-report-form" onSubmit={props.handleSubmit}>
         <label className="form-elements form-elements-totals">Date</label>
-        <input className="date-text"
+        <input className="new-grind-report-input-box"
           type="date"
           value={props.date}
           onChange={(e) => props.setDate(e.target.value)}

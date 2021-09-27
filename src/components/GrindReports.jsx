@@ -43,6 +43,7 @@ function GrindReports() {
             </div>
             <div className="grind-report-input-div">
               <h1 className="grind-report-input-text">{report.fields.total_Shots_Made}</h1>
+              <h1 className="grind-report-input-text">{report.fields.shot_Performace}</h1>
             </div>
             <Link to={`/FullGrindReport/${report.id}`}>
               <button className="full-report-link-button" type="button">{report.fields.date}</button>
