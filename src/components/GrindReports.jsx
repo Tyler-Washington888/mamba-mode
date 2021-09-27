@@ -39,14 +39,10 @@ function GrindReports() {
         return (
           <div key={report.id} className="grind-report-div">
             <div className="grind-report-header-div">
-              {/* <h1 className="date-text" className="grind-report-header-text">Date</h1> */}
               <h1 className="shots-made-text" className="grind-report-header-text">Shots Made</h1>
-              {/* <h1 className="shot-performance-text" className="grind-report-header-text">Performance</h1> */}
             </div>
             <div className="grind-report-input-div">
-              {/* <h1 className="grind-report-input-text">{report.fields.date}</h1> */}
               <h1 className="grind-report-input-text">{report.fields.total_Shots_Made}</h1>
-              {/* <h1 className="grind-report-input-text">{report.fields.shot_Performance}</h1> */}
             </div>
             <Link to={`/FullGrindReport/${report.id}`}>
               <button className="full-report-link-button" type="button">{report.fields.date}</button>

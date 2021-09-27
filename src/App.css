@@ -95,8 +95,10 @@ body {
   margin-bottom: 10px;
 }
 .date-text {
-  position: relative;
-  left: 100px;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 20px;
 }
 .full-report-link-button {
   color: black;
@@ -136,7 +138,7 @@ body {
 .new-grind-report-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 .form-elements{
   margin-bottom: 10px;
@@ -144,7 +146,7 @@ body {
 .form-elements-totals {
   font-size: 20px;
   color: #753BC3; 
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .new-grind-report-form-elements {
@@ -154,17 +156,12 @@ body {
 
 .new-grind-report-input-box {
   text-align: center;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
   height: 20px;
 }
 
-.date-input {
-  text-align: left;
-  margin-right: 30px;
-  margin-left: 30px;
-  height: 20px;
-}
+
 
 .duration-text {
   font-size: 20px;
@@ -200,7 +197,7 @@ body {
   border-color: #771db2;
   border: 2px solid;
   margin: auto;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .full-grind-report-title {
   color: #adff2f;
@@ -250,28 +247,11 @@ body {
   text-decoration: none;
 }
 
-@media screen and (max-width: 360px) {
-  .footer-text {
-    font-size: x-small;
-  }
-  .full-grind-report-div {
-    margin-bottom: 5px;
-  }
-}
 
-@media screen and (max-width: 411px) {
+@media screen and (min-width: 320px) {
   .footer-text {
+
     font-size: small;
-  }
-  .full-grind-report-div {
-    margin-bottom: 5px;
-  }
-  
-}
-
-@media screen and (max-width: 320px) {
-  .footer-text {
-    font-size: x-small;
   }
   .full-grind-report-div {
     margin-bottom: 5px;
@@ -286,12 +266,144 @@ body {
   }
 }
 
-@media screen and (max-width: 411px) {
-  .header-div { 
-    margin-left: 20px;
+
+@media screen and (min-width: 1024px) {
+  .header-div {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    margin-left: 15px;
+    background-color: #FBE192;
+    margin-bottom: 15px;
+  } 
+  .header-text-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .title-text {
+    color: #7E57C2;
+    font-size: 60px;
+  }
+  .subtitle-text {
+    margin-top: -25px;
+    position: relative;
+    left: -60px;
+    color:#753BC3;
+    font-size: 50px;
+  }
+
+  .footer-text {
+    font-size: x-large;
+  }
+
+  .full-grind-report-div {
+    margin-bottom: 5px;
+  }
+  .footer {
+    color: #730FC3;
+    background-color: #FBE192;;
+    padding: 8px;
+    margin: 0 auto;
+    font-size: 8px;
+  }
+  .shot-hist-div {
+    background-color: #B987E1;
+    border-color: #771db2;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20%;
+    min-height: 800px;
+  }
+  .shot-hist-header-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 15px;
+    height: 120px;
+  }
+  .shot-history-text {
+    font-size: 60px;
+    color: #730FC3;
+    margin-bottom: 12px;
+  }
+
+  .shot-history-text {
+    font-size: xx-large;
+    color: #730FC3;
+    margin-bottom: 8px;
+  }
+  .create-button-text {
+    width: 100px;
+    height: 60px;
+    padding: 10px;
+    background-color: #730FC3;
+    border: none;
+    border-radius: 8px;
+    color: #adff2f;
+    font-size: 20px; 
+  }
+
+  .grind-report-div {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-color: #FFFFFF;
+    border: 1px solid;
+    margin-bottom: 20px;
+    transition: 2s ease;
+    height: 200px;
+  }
+  .grind-report-header-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .grind-report-header-text {
+    font-size: 40px;
+    margin-bottom: 0px;
+  }
+  .grind-report-input-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .grind-report-input-text {
+    font-size: 50px;
+    color: #730FC3;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .date-text {
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 20px;
+  }
+  .full-report-link-button {
+    color: black;
+    border-color: #f7c325;
+    background-color: #f7c325;
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 8px;
   }
 
 }
+
+
+
+
+
+
+
 
 
 
