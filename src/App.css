@@ -87,7 +87,7 @@ body {
 .grind-report-input-div {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .grind-report-input-text {
   font-size: 25px;
@@ -117,6 +117,7 @@ body {
   padding: 8px;
   margin-top: 0px;
   font-size: 8px;
+  max-width: 300px;
   
 }
 

@@ -56,7 +56,7 @@ function Form(props) {
         <label className="form-elements form-elements-totals">Right Wing</label>
         <input className="new-grind-report-input-box"
           type="number"
-          value={props.rightWing}
+          value={props.right_Wing}
           onChange={(e) => props.setRightWing(e.target.valueAsNumber)}
         />
         <br />

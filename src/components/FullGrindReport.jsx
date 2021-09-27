@@ -51,7 +51,7 @@ export default function EditGrindReport() {
         <h1 className="full-grind-report-headers">Left Corner</h1>
         <h1 className="full-grind-report-input">{report.fields?.left_Corner}</h1>
         <h1 className="full-grind-report-headers">Right Wing</h1>
-        <h1 className="full-grind-report-input">{report.fields?.rightWing}</h1>
+        <h1 className="full-grind-report-input">{report.fields?.right_Wing}</h1>
         <h1 className="full-grind-report-headers">Left Wing</h1>
         <h1 className="full-grind-report-input">{report.fields?.left_Wing}</h1>
         <h1 className="full-grind-report-headers">Key</h1>
